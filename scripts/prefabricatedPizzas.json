@@ -1,0 +1,81 @@
+[
+  {
+    "Name": "Custom Pizza",
+    "Crust": "",
+    "Size": "",
+    "Sauce": "",
+    "Cheese": "",
+    "Toppings": 
+    [
+
+    ],
+    "Special": ""
+  },
+  {
+    "Name": "Cheese",
+    "Crust": "Original",
+    "Size": "Large",
+    "Sauce": "Marinara",
+    "Cheese": "Normal",
+    "Toppings": 
+    [
+    ],
+    "Special": "false"
+  },
+  {
+    "Name": "Pepperoni",
+    "Crust": "Original",
+    "Size": "Large",
+    "Sauce": "Marinara",
+    "Cheese": "Normal",
+    "Toppings": 
+    [
+      "Pepperoni"
+    ],
+    "Special": "false"
+  },
+  {
+    "Name": "Meat-Lovers",
+    "Crust": "Original",
+    "Size": "Large",
+    "Sauce": "Marinara",
+    "Cheese": "Normal",
+    "Toppings": 
+    [
+      "Pepperoni",
+      "Sausage",
+      "Beef",
+      "Ham",
+      "Chicken"
+    ],
+    "Special": "true"
+  },
+  {
+    "Name": "Hawaiian",
+    "Crust": "Original",
+    "Size": "Large",
+    "Sauce": "Marinara",
+    "Cheese": "Normal",
+    "Toppings": 
+    [
+      "Ham",
+      "Pineapple"
+    ],
+    "Special": "false"
+  },
+  {
+    "Name": "Veggie",
+    "Crust": "Original",
+    "Size": "Large",
+    "Sauce": "Marinara",
+    "Cheese": "Normal",
+    "Toppings": 
+    [
+      "Olives",
+      "Mushrooms",
+      "Onions",
+      "Peppers"
+    ],
+    "Special": "false"
+  }
+]
