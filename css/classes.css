@@ -1,15 +1,11 @@
 #outline {
-  border: 1px, #000, dashed;
-}
+  border: 1px, #000, dashed; }
 
 #btn {
   border: 1px, #000, solid;
-  text-align: center;
-}
+  text-align: center; }
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  margin: 40px;
-}
-
+  margin: 40px; }
