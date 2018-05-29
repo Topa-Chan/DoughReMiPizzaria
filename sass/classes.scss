@@ -1,8 +1,8 @@
-#outline {
+.outline {
   border: 1px, #000, dashed;
 }
 
-#btn {
+.btn {
   border: 1px, #000, solid;
   text-align: center;
 }
@@ -11,5 +11,6 @@
   display: flex;
   flex-direction: row;
   margin: 40px;
+  @extend .outline;
 }
 
