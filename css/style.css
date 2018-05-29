@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 .outline, .flex-container {
-  border: 1px, #000, dashed; }
+  border: 1px dashed #000; }
 
 .btn {
   border: 1px, #000, solid;

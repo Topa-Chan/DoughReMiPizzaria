@@ -1,5 +1,5 @@
 .outline {
-  border: 1px, #000, dashed;
+  border: 1px dashed #000;
 }
 
 .btn {
@@ -13,4 +13,5 @@
   margin: 40px;
   @extend .outline;
 }
+
 
