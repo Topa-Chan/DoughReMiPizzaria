@@ -46,8 +46,6 @@
   margin-top: auto;
 }
 
-
-
 .customize {
   display: flex;
   flex-direction: row;
@@ -63,18 +61,17 @@
   height: 50px;
 }
 
-#crustTab {
-
+.crustTab {
 }
 
-#cheeseTab {
+.cheeseTab {
   display: none;
 }
 
-#meatTab {
+.meatTab {
   display: none;
 }
 
-#veggieTab {
+.veggieTab {
   display: none;
 }

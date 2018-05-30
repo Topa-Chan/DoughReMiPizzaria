@@ -100,11 +100,13 @@ table {
   border: 1px solid #00f;
   height: 50px; }
 
-#cheeseTab {
+.cheeseTab {
   display: none; }
 
-#meatTab {
+.meatTab {
   display: none; }
 
-#veggieTab {
+.veggieTab {
   display: none; }
+
+/*# sourceMappingURL=style.css.map */
