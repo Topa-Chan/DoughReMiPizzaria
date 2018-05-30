@@ -45,6 +45,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+h1 {
+  font-size: 20px;
+  font-weight: bold; }
+
 .outline {
   border: 1px dashed #000; }
 
@@ -84,6 +88,9 @@ table {
 .pizzaPic {
   border-radius: 3px; }
 
+#pizza {
+  background: url(../images/previews/SVG/Crust.svg); }
+
 .bottom-btn {
   margin-top: auto; }
 
@@ -100,13 +107,27 @@ table {
   border: 1px solid #00f;
   height: 50px; }
 
+.crustTab {
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center; }
+
 .cheeseTab {
-  display: none; }
+  display: none;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center; }
 
 .meatTab {
-  display: none; }
+  display: none;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center; }
 
 .veggieTab {
-  display: none; }
+  display: none;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

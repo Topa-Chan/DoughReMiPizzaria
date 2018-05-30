@@ -1,3 +1,8 @@
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .outline {
   border: 1px dashed #000;
 }
@@ -42,6 +47,10 @@
   border-radius: 3px;
 }
 
+#pizza {
+  background: url(../images/previews/SVG/Crust.svg);
+}
+
 .bottom-btn {
   margin-top: auto;
 }
@@ -62,16 +71,28 @@
 }
 
 .crustTab {
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center;
 }
 
 .cheeseTab {
   display: none;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center;
 }
 
 .meatTab {
   display: none;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center;
 }
 
 .veggieTab {
   display: none;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center;
 }
