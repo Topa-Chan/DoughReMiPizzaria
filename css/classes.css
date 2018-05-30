@@ -39,3 +39,25 @@
 
 .bottom-btn {
   margin-top: auto; }
+
+.customize {
+  display: flex;
+  flex-direction: row;
+  margin-left: 750px;
+  height: 400px;
+  margin-right: 105px; }
+
+.tabs {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #00f;
+  height: 50px; }
+
+#cheeseTab {
+  display: none; }
+
+#meatTab {
+  display: none; }
+
+#veggieTab {
+  display: none; }
