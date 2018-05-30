@@ -89,7 +89,10 @@ h1 {
   border-radius: 3px; }
 
 #pizza {
-  background: url(../images/previews/SVG/Crust.svg); }
+  height: 200px;
+  width: 200px;
+  background: url(../images/previews/SVG/Crust.svg);
+  margin-left: 200px; }
 
 .bottom-btn {
   margin-top: auto; }
@@ -97,8 +100,11 @@ h1 {
 .customize {
   display: flex;
   flex-direction: row;
+  height: 400px; }
+
+.customizeMenu {
+  flex-direction: column;
   margin-left: 750px;
-  height: 400px;
   margin-right: 105px; }
 
 .tabs {
@@ -108,6 +114,7 @@ h1 {
   height: 50px; }
 
 .crustTab {
+  display: none;
   flex-direction: column;
   max-width: 350px;
   text-align: center; }
@@ -119,7 +126,6 @@ h1 {
   text-align: center; }
 
 .meatTab {
-  display: none;
   flex-direction: column;
   max-width: 350px;
   text-align: center; }
