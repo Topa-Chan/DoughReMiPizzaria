@@ -107,6 +107,7 @@
   padding: 0 10px !important; 
   margin: 0px !important;
   align-items: center;
+  justify-content: center;
 }
 
 .box-area {
@@ -116,12 +117,28 @@
   justify-content: center;
 }
 
+.inner-box {
+  width: 50%;
+  text-align: left;
+}
+
 .more-space {
   height: 50px;
 }
 
-#toppingsArea {
+.list {
+  background-color: #fff;
   height: 150px;
+  overflow-y: scroll;
+}
+
+.list-item {
+  padding: 10px;
+  text-align: center;
+}
+
+#toppingsArea {
+  height: 200px;
 }
 
 #pizza {

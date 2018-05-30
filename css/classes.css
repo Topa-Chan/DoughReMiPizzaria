@@ -91,7 +91,8 @@
   height: inherit;
   padding: 0 10px !important;
   margin: 0px !important;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
 
 .box-area {
   height: 30px;
@@ -99,11 +100,24 @@
   margin: 0 20px;
   justify-content: center; }
 
+.inner-box {
+  width: 50%;
+  text-align: left; }
+
 .more-space {
   height: 50px; }
 
+.list {
+  background-color: #fff;
+  height: 150px;
+  overflow-y: scroll; }
+
+.list-item {
+  padding: 10px;
+  text-align: center; }
+
 #toppingsArea {
-  height: 150px; }
+  height: 200px; }
 
 #pizza {
   height: inherit;
