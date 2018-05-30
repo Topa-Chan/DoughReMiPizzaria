@@ -52,5 +52,5 @@ function addPepperoni(evt) {
     topString += ", "
   }
   console.log(topString);
-  pizza.style.background = topString + "url(../images/previews/SVG/Crust.svg)";
+  pizza.style.background = topString + "url(../images/preview/SVG/Crust.svg)";
 }
