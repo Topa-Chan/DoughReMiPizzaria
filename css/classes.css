@@ -1,148 +1,35 @@
-.outline {
-  border: 1px dashed #000; }
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 204 of C:\Users\Julie\Desktop\NU Folder\Spring Quarter 2018\Front-End Implementation\PizzaProject\DoughReMiPizzaria\sass\classes.scss
 
-.btn {
-  background-color: #FF463F;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
-  width: 90px; }
+199:   display: none;
+200:   flex-direction: column;
+201:   max-width: 350px;
+202:   text-align: center;
+203: }
 
-.btn-theme-1 {
-  padding: 25px 30px !important;
-  width: 150px;
-  font-size: 1.2em;
-  margin: 40px 0; }
-
-.bottom-btn {
-  margin-top: auto; }
-
-.top-btn {
-  margin-bottom: auto; }
-
-.btn:hover {
-  background-color: #ff2d26; }
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  margin: 40px;
-  border-radius: 7px;
-  align-items: center; }
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  border-radius: 3px;
-  align-items: center;
-  margin: 0 20px;
-  width: 100%;
-  height: 170px;
-  background-color: #FFC76D;
-  padding: 20px; }
-
-.pizzaName {
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 15px;
-  font-weight: bold; }
-
-.pizzaDesc {
-  font-size: 1.2em;
-  text-align: center; }
-
-.pizzaPic {
-  border-radius: 3px; }
-
-.nav {
-  overflow: hidden;
-  background-color: #FF463F; }
-
-.nav a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  margin-top: 15px;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 1.2em; }
-
-.nav-item:hover:not(.active-nav) {
-  color: #fff;
-  border-bottom: 5px solid #FFC76D;
-  margin-top: 10px; }
-
-.active-nav {
-  background-color: #FFC76D;
-  color: #fff !important; }
-
-.container {
-  height: 450px; }
-
-#btn-area, #ingredientsArea {
-  width: 50% !important;
-  flex: 1;
-  height: inherit;
-  padding: 0 10px !important;
-  margin: 0px !important;
-  align-items: center;
-  justify-content: center; }
-
-.box-area {
-  height: 30px;
-  width: 300px;
-  margin: 0 20px;
-  justify-content: center; }
-
-.inner-box {
-  width: 50%;
-  text-align: left; }
-
-.more-space {
-  height: 50px; }
-
-.list {
-  background-color: #fff;
-  height: 150px;
-  overflow-y: scroll; }
-
-.list-item {
-  padding: 10px;
-  text-align: center; }
-
-#toppingsArea {
-  height: 200px; }
-
-#pizza {
-  height: inherit;
-  width: 50% !important;
-  padding: 0 10px !important;
-  flex: 1; }
-
-.customize {
-  display: flex;
-  flex-direction: row;
-  margin-left: 750px;
-  height: 400px;
-  margin-right: 105px; }
-
-.tabs {
-  flex: 1;
-  text-align: center;
-  border: 1px solid #00f;
-  height: 50px; }
-
-#cheeseTab {
-  display: none; }
-
-#meatTab {
-  display: none; }
-
-#veggieTab {
-  display: none; }
+Backtrace:
+C:\Users\Julie\Desktop\NU Folder\Spring Quarter 2018\Front-End Implementation\PizzaProject\DoughReMiPizzaria\sass\classes.scss:204
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:679:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 204 of C:\Users\Julie\Desktop\NU Folder\Spring Quarter 2018\Front-End Implementation\PizzaProject\DoughReMiPizzaria\sass\classes.scss\A \A 199:   display: none;\A 200:   flex-direction: column;\A 201:   max-width: 350px;\A 202:   text-align: center;\A 203: }"; }
