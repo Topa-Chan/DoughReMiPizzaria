@@ -5,42 +5,39 @@
     <link rel='stylesheet' href='../css/style.css' />
   </head>
   <body>
-    <canvas id='pizza'></canvas>
-    <div>
-      <div id='chosenPie'></div>
-      <div class="outline">
-        <div>Crust</div>
-        <div></div>
-      </div>
-      <div class="outline">
-        <div>Size</div>
-        <div></div>
-      </div>
-      <div class="outline">
-        <div>Cheese</div>
-      <div></div>
-      </div>
-      <div class="outline">
-        <div>Sauce</div>
-        <div></div>
-      </div>
-      <div class="outline">
-        <div>Meats</div>
-        <div></div>
-      </div>
-      <div class="outline">
-        <div>Veggies</div>
-        <div></div>
-      </div>
-      <br>
-      <div class="outline">
-        <div>Total</div>
-        <div></div>
-      </div>
-      <br>
-      <div>
-        <div class="btn">Modify</div>
-        <div class='btn'>Add to Order</div>
+    <div class="nav">
+        <a href="index.html" class="nav-brand">Dough Re Mi Pizzeria</a>
+        <a href="index.html" class="nav-item">Pizza Specials</a>           
+        <a href="index.html" class="nav-item">Pizza Specials</a>           
+        <a href="index.html" class="nav-item">Pizza Specials</a>           
+        <a href="index.html" class="nav-item">Pizza Specials</a>          
+    </div>
+
+    <div class="flex-row container outline">
+      <canvas id='pizza' class=""></canvas>
+      <div id="ingredientsArea" class="flex-col">
+        <div id="crustArea" class="flex-row box-area outline">
+            <div>Crust:</div>
+        </div>  
+        <div id="sizeArea" class="flex-row box-area outline">
+            <div>Size:</div>
+        </div>
+        <div id="cheeseArea" class="flex-row box-area outline">
+            <div>Cheese:</div>
+        </div>  
+        <div id="sauceArea" class="flex-row box-area outline">
+            <div>Sauce:</div>
+        </div>  
+        <div id="toppingsArea" class="flex-row box-area outline">
+            <div>Toppings:</div>
+        </div> 
+        <div id="totalArea" class="flex-row box-area more-space outline">
+            <div>Total:</div>
+        </div>
+        <div id="btnArea" class="flex-row box-area more-space outline">
+            <div class="bottom-btn"><a href="../pages/customize.html" class="btn">Modify</a></div>
+            <div class="bottom-btn"><a href="../pages/thanks.html" class="btn">Add To Order</a></div>
+        </div>  
       </div>
     </div>
     <script src='scripts/script.js'></script>

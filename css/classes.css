@@ -82,16 +82,28 @@
   background-color: #FFC76D;
   color: #fff !important; }
 
-#conf-area {
+.container {
   height: 450px; }
 
-#btn-area {
+#btn-area, #ingredientsArea {
   width: 50% !important;
   flex: 1;
   height: inherit;
   padding: 0 10px !important;
   margin: 0px !important;
   align-items: center; }
+
+.box-area {
+  height: 30px;
+  width: 300px;
+  margin: 0 20px;
+  justify-content: center; }
+
+.more-space {
+  height: 50px; }
+
+#toppingsArea {
+  height: 150px; }
 
 #pizza {
   height: inherit;
