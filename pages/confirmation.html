@@ -5,10 +5,23 @@
     <link rel='stylesheet' href='../css/style.css' />
   </head>
   <body>
-    <canvas id='pizza'></canvas>
-    <div class="outline">
-      <div class="btn">Customize</div>
-      <div class="btn">Add to Order</div>
+    <div class="nav">
+        <a href="index.html" class="nav-brand">Dough Re Mi Pizzeria</a>
+        <a href="index.html" class="nav-item">Pizza Specials</a>           
+        <a href="index.html" class="nav-item">Pizza Specials</a>           
+        <a href="index.html" class="nav-item">Pizza Specials</a>           
+        <a href="index.html" class="nav-item">Pizza Specials</a>          
+    </div>
+    <div class="flex-row container">
+      <canvas id='pizza' class=""></canvas>
+      <div id="btn-area" class="flex-col">
+        <div class="flex-row">
+          <div class="bottom-btn"><a href="../pages/customize.html" class="btn btn-theme-1">Modify</a></div>
+        </div>
+        <div class="flex-row">
+          <div class="top-btn"><a href="../pages/total.html" class="btn btn-theme-1">Add To Order</a></div>
+        </div>
+      </div>
     </div>
     <script src='scripts/script.js'></script>
   </body>

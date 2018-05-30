@@ -53,15 +53,31 @@ h1 {
   border: 1px dashed #000; }
 
 .btn {
-  background-color: #1C6D62;
+  background-color: #FF463F;
   border: none;
   border-radius: 5px;
   color: #fff;
-  padding: 15px 32px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px; }
+  font-size: 1em;
+  width: 90px; }
+
+.btn-theme-1 {
+  padding: 25px 30px !important;
+  width: 150px;
+  font-size: 1.2em;
+  margin: 40px 0; }
+
+.bottom-btn {
+  margin-top: auto; }
+
+.top-btn {
+  margin-bottom: auto; }
+
+.btn:hover {
+  background-color: #ff2d26; }
 
 .flex-row {
   display: flex;
@@ -78,24 +94,93 @@ h1 {
   margin: 0 20px;
   width: 100%;
   height: 170px;
-  background-color: #EACC9A;
+  background-color: #FFC76D;
   padding: 20px; }
 
+.pizzaName {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold; }
+
 .pizzaDesc {
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: center; }
 
 .pizzaPic {
   border-radius: 3px; }
 
+.bottom-btn {
+  margin-top: auto; }
+
+.nav {
+  overflow: hidden;
+  background-color: #FF463F; }
+
+.nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.2em; }
+
+.nav-item:hover:not(.active-nav) {
+  color: #fff;
+  border-bottom: 5px solid #FFC76D;
+  margin-top: 10px; }
+
+.active-nav {
+  background-color: #FFC76D;
+  color: #fff !important; }
+
+.container {
+  height: 450px; }
+
+#btn-area, #ingredientsArea, #container {
+  width: 50% !important;
+  flex: 1;
+  height: inherit;
+  padding: 0 10px !important;
+  margin: 0px !important;
+  align-items: center;
+  justify-content: center; }
+
+.box-area {
+  height: 30px;
+  width: 300px;
+  margin: 0 20px;
+  justify-content: center; }
+
+.inner-box {
+  width: 50%;
+  text-align: left; }
+
+.more-space {
+  height: 50px; }
+
+.list {
+  background-color: #fff;
+  height: 150px;
+  overflow-y: scroll; }
+
+.list-item {
+  padding: 10px;
+  text-align: center; }
+
+#toppingsArea {
+  height: 200px; }
+
 #pizza {
   height: 200px;
   width: 200px;
   background: url(../images/previews/SVG/Crust.svg);
-  margin-left: 200px; }
-
-.bottom-btn {
-  margin-top: auto; }
+  height: inherit;
+  width: 50% !important;
+  padding: 0 10px !important;
+  flex: 1; }
 
 .customize {
   display: flex;
@@ -106,6 +191,22 @@ h1 {
   flex-direction: column;
   margin-left: 750px;
   margin-right: 105px; }
+
+.flex-tabs {
+  width: 100%;
+  height: 20%;
+  margin: 0px !important; }
+
+.crust-area, .cheese-area, .meat-area, .veg-area {
+  width: 100%;
+  height: 80%;
+  margin: 0px; }
+
+.hidden {
+  display: none; }
+
+.visible {
+  display: block; }
 
 .tabs {
   flex: 1;
@@ -135,5 +236,3 @@ h1 {
   flex-direction: column;
   max-width: 350px;
   text-align: center; }
-
-/*# sourceMappingURL=style.css.map */
