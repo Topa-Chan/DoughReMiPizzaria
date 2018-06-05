@@ -177,6 +177,7 @@ h1 {
   height: 200px;
   width: 200px;
   background: url(../images/previews/SVG/Crust.svg);
+  background-repeat: no-repeat;
   height: inherit;
   width: 50% !important;
   padding: 0 10px !important;
@@ -195,9 +196,11 @@ h1 {
 .flex-tabs {
   width: 100%;
   height: 20%;
-  margin: 0px !important; }
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 400px; }
 
-.crust-area, .cheese-area, .meat-area, .veg-area {
+#crust-area, #cheese-area, #sauce-area, #meat-area, #veggie-area {
   width: 100%;
   height: 80%;
   margin: 0px; }
@@ -214,14 +217,7 @@ h1 {
   border: 1px solid #00f;
   height: 50px; }
 
-.crustTab {
-  display: none;
-  flex-direction: column;
-  max-width: 350px;
-  text-align: center; }
-
 .cheeseTab {
-  display: none;
   flex-direction: column;
   max-width: 350px;
   text-align: center; }
@@ -232,7 +228,8 @@ h1 {
   text-align: center; }
 
 .veggieTab {
-  display: none;
   flex-direction: column;
   max-width: 350px;
   text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

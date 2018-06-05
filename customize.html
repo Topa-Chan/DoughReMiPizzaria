@@ -13,7 +13,7 @@
 
     <div class="flex-row container">
       <canvas id='pizza'></canvas>
-        <div id="container" class='outline customize flex-col'>
+      <div id="container" class='outline customize flex-col'>
 
           <div class="flex-row flex-tabs">
             <div class="tabs">Crusts and Sizes</div>
@@ -21,62 +21,47 @@
             <div class='tabs'>Meats</div> 
             <div class='tabs'>Veggies</div>
           </div>
-
-          <div class="flex-row crust-area visible">
-            <div class="crustTab">
-              <h1>Crusts</h1>
-              <div class='btn' id='btn-original'>Original</div>
-              <div class='btn' id='btn-handToss'>Hand-Tossed</div>
-              <div Class='btn' id='btn-thinCrust'>Thin Crust</div>
-              <h1>Sizes</h1>
-              <select>
-                <option>Personal</option>
-                <option>Small</option>
-                <option>Medium</option>
-                <option selected="selected">Large</option>
-              </select>
+            <div class="flex-row visible">
+              <div class="crustTab">
+                <h1>Crusts</h1>
+                <div id='crust-area'></div>
+                <h1>Sizes</h1>
+                <select>
+                  <option>Personal</option>
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option selected="selected">Large</option>
+                </select>
+              </div>
             </div>
-          </div>
 
-          <div class="flex-row cheese-area hidden">
-            <div class='cheeseTab'>
-              <h1>Cheese</h1>
-              <div class='btn' id='btn-extra'>Extra</div>
-              <div class='btn' id='btn-normal'>Normal</div>
-              <div class='btn' id='btn-none'>None</div>
-              <h1>Sauce</h1>
-              <div class='btn' id='btn-marinara'>Marinara</div>
-              <div class='btn' id='btn-creamy'>Creamy Garlic</div>
-              <div class='btn' id='btn-buffalo'>Buffalo</div>
+            <div class="flex-row hidden">
+              <div class='cheeseTab'>
+                <h1>Cheese</h1>
+                <div id='cheese-area'></div>
+                <h1>Sauce</h1>
+                <div id='sauce-area'></div>
+              </div>
             </div>
-          </div>
 
-          <div class="flex-row meat-area hidden">
-            <div class="meatTab">
-              <h1>Meats</h1>
-              <div class='btn' id='btn-pepperoni'>Pepperoni</div>
-              <div class='btn' id='btn-sausage'>Sausage</div>
-              <div class='btn' id='btn-beef'>Beef</div>
-              <div class='btn' id='btn-ham'>Ham</div>
-              <div class='btn' id='btn-chicken'>Chicken</div>
+            <div class="flex-row hidden">
+              <div class="meatTab">
+                <h1>Meats</h1>
+                <div id='meat-area'></div>
+              </div>
             </div>
-          </div>
 
-          <div class="flex-row veg-area hidden">
-            <div class='veggieTab hidden'>
-              <h1>Veggie</h1>
-              <div class='btn' id='btn-mushrooms'>Mushrooms</div>
-              <div class='btn' id='btn-onions'>Onions</div>
-              <div class='btn' id='btn-olives'>Olives</div>
-              <div class='btn' id='btn-peppers'>Peppers</div>
-              <div class='btn' id='btn-pineapple'>Pineapple</div>
-            </div>
-          </div>  
-        </div>
+            <div class="flex-row hidden">
+              <div class='veggieTab hidden'>
+                <h1>Veggie</h1>
+                <div id='veggie-area'></div>
+              </div>
+            </div>  
+      </div>
     </div>
 
     
 
-    <script src='scripts/script.js'></script>
+    <script src='../scripts/script.js'></script>
   </body>
 </html>
