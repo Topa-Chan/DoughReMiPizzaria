@@ -202,6 +202,8 @@ h1 {
 #pizza {
   height: 200px;
   width: 200px;
+  background: url(../images/previews/SVG/Crust.svg);
+  background-repeat: no-repeat;
   height: inherit;
   width: 50% !important;
   padding: 0 10px !important;
@@ -262,5 +264,3 @@ h1 {
 
 .active {
   background-color: #21f; }
-
-/*# sourceMappingURL=style.css.map */
