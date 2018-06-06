@@ -200,8 +200,13 @@ function buildPizza() {
         return valueArr.indexOf(item) != idx 
       });
     }
+    
     for (var i = 0; i < toppings.length; i++) {
-      pizzaComponents.unshift(toppings[i]);
+      if (isDuplicate) {
+        pizzaComponents.unshift(removeDuplicates(toppings)[i]);
+      } else {
+        pizzaComponents.unshift(toppings[i]);
+      }
     }
   }
   var pizzaComponentsStr = "";
@@ -216,4 +221,14 @@ function buildPizza() {
   console.log(pizzaComponentsStr);
   pizza.style.background = pizzaComponentsStr;
   pizza.style.backgroundRepeat = "no-repeat";
+}
+
+function removeDuplicates(arr){
+  var newToppings = []
+  for(var i = 0;i < arr.length; i++){
+      if(newToppings.indexOf(arr[i]) == -1){
+          newToppings.push(arr[i])
+      }
+  }
+  return newToppings;
 }
