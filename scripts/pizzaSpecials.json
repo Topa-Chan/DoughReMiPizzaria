@@ -7,31 +7,31 @@
       "Description": "Create your dream pizza with our quality ingredients, sauces and crusts."
     },
     {
-      "Name": "Cheese Pizza",
+      "Name": "Cheese",
       "Id": "cheese" ,
       "ImageSource": "images/cheese_pizza.jpg",
       "Description": "Your favorite cheese pizza made with classic marinara sauce topped with cheese."
     },
     {
-      "Name": "Pepperoni Pizza",
+      "Name": "Pepperoni",
       "Id": "pepperoni" ,
       "ImageSource": "images/pepperoni_pizza.jpg",
       "Description": "This gourmet pizza is ideal for easy late night delivery, complete with marinara sauce, cheese and pepperoni."
     },
     {
-      "Name": "Meat Lover's Pizza",
+      "Name": "Meat Lover's",
       "Id": "meat_lovers" ,
       "ImageSource": "images/meat_lovers_pizza.jpg",
       "Description": "Meat lover's pizza is the perfect game day pizza, made with marinara sauce and packed with pepperoni, sausage, ham, chicken and beef."
     },
     {
-      "Name": "Hawaiian Pizza",
+      "Name": "Hawaiian",
       "Id": "hawaiian" ,
       "ImageSource": "images/hawaiian_pizza.jpg",
       "Description": "The most debatable pizza ever created. Made with marinara sauce, pineapple, and ham."
     },
     {
-      "Name": "Vegetarian Pizza",
+      "Name": "Vegetarian",
       "Id": "vegetarian" ,
       "ImageSource": "images/vegetarian_pizza.jpg",
       "Description": "Enjoy this freshly prepared pizza tailored for vegetarians, including marinara sauce, mushrooms, olives, green bell peppers and red onions."

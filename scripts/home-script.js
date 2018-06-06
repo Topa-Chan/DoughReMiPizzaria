@@ -11,6 +11,7 @@ function loadData() {
 function loadComplete(evt) {
   var eventJson = JSON.parse(request.responseText);
   createHomePage(eventJson);
+  //temp(eventJson);
 }
 
 function createNavBar(navItemsList) {
@@ -25,10 +26,7 @@ function createNavBar(navItemsList) {
 
 }
 
-function createAddToOrderButton(isCustom) {
-  var divClass = 'bottom-btn';
-  var aClass = 'btn';
-  var msg = 'Add To Order';
+function createAddToOrderButton(isCustom, pizzaType) {
   var href;
   if (isCustom) {
     href = 'customize.html';
@@ -36,28 +34,70 @@ function createAddToOrderButton(isCustom) {
     href = 'confirmation.html';
   }
 
-  var button = `<div class="${divClass}"><a href="${href}" class="${aClass}>${msg}</a></div>`;
+  var buttonDiv = document.createElement("div");
+  buttonDiv.setAttribute("class", "bottom-btn");
+  var aTag = document.createElement("a");
+  aTag.setAttribute("class", "btn");
+  aTag.text = 'Add To Order';
+  aTag.addEventListener('click', function(){
+    sessionStorage.setItem('pizza-name', `${pizzaType}`);
+    document.location.href = href;
+  });
 
-  return button;
+  buttonDiv.appendChild(aTag);
+  //var button = `<div class="${divClass}"><a href="#" onClick="addToOrderClick(${href}, ${pizzaName})" class="${aClass}">${msg}</a></div>`;
+
+  return buttonDiv;
 }
 
-function createPizzaSpecial(imgSource, pizzaName, pizzaId, description, isCustom) {
-  var orderButton = createAddToOrderButton(isCustom);
+function createPizzaSpecial(imgSource, pizzaName, pizzaId, description, isCustom, pizzaType) {
 
-  var layout = `<div class="flex-row"><img class="pizzaPic" src="${imgSource}"><div class='flex-col'><div id="${pizzaId}" class="pizzaName">${pizzaName}</div><div class="pizzaDesc">${description}</div>${orderButton}</div></div>`;
+  var divContainer = document.createElement("div");
+  divContainer.setAttribute("class", "flex-row");
+
+  var img = document.createElement("img");
+  img.setAttribute("class", "pizzaPic");
+  img.setAttribute("src", imgSource);
+
+  var divInfo = document.createElement("div");
+  divInfo.setAttribute("class", "flex-col");
+
+  var divName = document.createElement("div");
+  divName.setAttribute("id", pizzaId);
+  divName.setAttribute("class", "pizzaName");
+  divName.textContent = pizzaName;
+
+  var divDesc = document.createElement("div");
+  divDesc.setAttribute("class", "pizzaDesc");  
+  divDesc.textContent = description;
+
+  var orderButton = createAddToOrderButton(isCustom, pizzaType);
   
-  return layout;
+  divInfo.appendChild(divName);
+  divInfo.appendChild(divDesc);
+  divInfo.appendChild(orderButton);
+
+  divContainer.appendChild(img);
+  divContainer.appendChild(divInfo);
+
+
+  //var layout = `<div class="flex-row"><img class="pizzaPic" src="${imgSource}"><div class='flex-col'><div id="${pizzaId}" class="pizzaName">${pizzaName}</div><div class="pizzaDesc">${description}</div>${orderButton}</div></div>`;
+  
+  return divContainer;
 }
 
 function createHomePage(eventJson) {
   var isCustom;
+  var pizzaName;
   for (var index in eventJson.pizza) {
     if (eventJson.pizza[index].Id == "custom") {
       isCustom = true;
+      pizzaName = eventJson.pizza[index].Name;
     } else {
       isCustom = false;
+      pizzaName = `${eventJson.pizza[index].Name} Pizza`;
     }
-    document.getElementById('main-body').innerHTML += createPizzaSpecial(eventJson.pizza[index].ImgSource, eventJson.pizza[index].Name, eventJson.pizza[index].Id, eventJson.pizza[index].Description, isCustom);
+    document.getElementById('main-body').appendChild(createPizzaSpecial(eventJson.pizza[index].ImageSource, pizzaName, eventJson.pizza[index].Id, eventJson.pizza[index].Description, isCustom, eventJson.pizza[index].Name));
   }
 }
 
