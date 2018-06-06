@@ -1,3 +1,11 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 h1 {
   font-size: 20px;
   font-weight: bold; }
@@ -15,7 +23,8 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 1em;
-  width: 90px; }
+  width: 90px;
+  cursor: pointer; }
 
 .btn-theme-1 {
   padding: 25px 30px !important;
@@ -126,10 +135,26 @@ h1 {
 #toppingsArea {
   height: 200px; }
 
+#thanks-msg {
+  font-size: 2.5em;
+  padding: 20px;
+  margin-top: 20px; }
+
+.thanks {
+  margin: auto;
+  height: 50%;
+  width: 80%;
+  border-radius: 3px;
+  margin-top: 10%; }
+
+.right-mar {
+  margin-right: 50px; }
+
 #pizza {
   height: 200px;
   width: 200px;
   background: url(../images/previews/SVG/Crust.svg);
+  background-repeat: no-repeat;
   height: inherit;
   width: 50% !important;
   padding: 0 10px !important;
@@ -148,9 +173,11 @@ h1 {
 .flex-tabs {
   width: 100%;
   height: 20%;
-  margin: 0px !important; }
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 400px; }
 
-.crust-area, .cheese-area, .meat-area, .veg-area {
+#crust-area, #cheese-area, #sauce-area, #meat-area, #veggie-area {
   width: 100%;
   height: 80%;
   margin: 0px; }
@@ -167,14 +194,7 @@ h1 {
   border: 1px solid #00f;
   height: 50px; }
 
-.crustTab {
-  display: none;
-  flex-direction: column;
-  max-width: 350px;
-  text-align: center; }
-
 .cheeseTab {
-  display: none;
   flex-direction: column;
   max-width: 350px;
   text-align: center; }
@@ -185,7 +205,6 @@ h1 {
   text-align: center; }
 
 .veggieTab {
-  display: none;
   flex-direction: column;
   max-width: 350px;
   text-align: center; }
