@@ -1,5 +1,4 @@
 var request = new XMLHttpRequest();
-var pagesList = ['Dough Re Mi Pizzeria', 'Pizza Specials'];
 
 
 function loadData() {
@@ -11,19 +10,6 @@ function loadData() {
 function loadComplete(evt) {
   var eventJson = JSON.parse(request.responseText);
   createHomePage(eventJson);
-  //temp(eventJson);
-}
-
-function createNavBar(navItemsList) {
-  //document.getElementById('main-body').innerHTML += '<div class="nav"><a href="index.html" class="nav-brand">Dough Re Mi Pizzeria</a><a href="index.html" class="active-nav nav-item">Pizza Specials</a><a href="index.html" class="nav-item">Pizza Specials</a><a href="index.html" class="nav-item">Pizza Specials</a><a href="index.html" class="nav-item">Pizza Specials</a></div>'
-  var path = window.location.pathname;
-  var pathArray = path.split('/');
-  var page = pathArray[pathArray.length - 1];
-  if (page == "index.html") {
-    //console.log("True");
-
-  }
-
 }
 
 function createAddToOrderButton(isCustom, pizzaType) {
@@ -38,14 +24,13 @@ function createAddToOrderButton(isCustom, pizzaType) {
   buttonDiv.setAttribute("class", "bottom-btn");
   var aTag = document.createElement("a");
   aTag.setAttribute("class", "btn");
-  aTag.text = 'Add To Order';
+  aTag.textContent = 'Add To Order';
   aTag.addEventListener('click', function(){
     sessionStorage.setItem('pizza-name', `${pizzaType}`);
     document.location.href = href;
   });
 
   buttonDiv.appendChild(aTag);
-  //var button = `<div class="${divClass}"><a href="#" onClick="addToOrderClick(${href}, ${pizzaName})" class="${aClass}">${msg}</a></div>`;
 
   return buttonDiv;
 }
@@ -79,9 +64,6 @@ function createPizzaSpecial(imgSource, pizzaName, pizzaId, description, isCustom
 
   divContainer.appendChild(img);
   divContainer.appendChild(divInfo);
-
-
-  //var layout = `<div class="flex-row"><img class="pizzaPic" src="${imgSource}"><div class='flex-col'><div id="${pizzaId}" class="pizzaName">${pizzaName}</div><div class="pizzaDesc">${description}</div>${orderButton}</div></div>`;
   
   return divContainer;
 }
