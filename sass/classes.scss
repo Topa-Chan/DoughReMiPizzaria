@@ -16,6 +16,7 @@ h1 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 5px;
   font-size: 1em;
   width: 90px;
 }
@@ -37,6 +38,7 @@ h1 {
 
 .btn:hover {
   background-color: darken(#FF463F, 5%);
+  cursor: pointer;
 }
 
 .flex-row {
@@ -153,8 +155,8 @@ h1 {
 #pizza {
   height: 200px;
   width: 200px;
-  background: url(../images/previews/SVG/Crust.svg);
-  background-repeat: no-repeat;
+  // background: url(../images/previews/SVG/Crust.svg);
+  // background-repeat: no-repeat;
   height: inherit;
   width: 50% !important;
   padding: 0 10px !important;  
@@ -203,6 +205,11 @@ h1 {
   text-align: center;
   border: 1px solid #00f;
   height: 50px;
+  min-width: 75px;
+}
+
+.tabs:hover {
+  cursor: pointer;
 }
 
 // .crustTab {
@@ -227,4 +234,8 @@ h1 {
   flex-direction: column;
   max-width: 350px;
   text-align: center;
+}
+
+.active {
+  background-color: #21f;
 }
