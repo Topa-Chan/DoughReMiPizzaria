@@ -1,47 +1,14 @@
-{/* <div class="flex-row container">
-      <canvas id='pizza' class=""></canvas>
-      <div id="ingredientsArea" class="flex-col">
-        <div id="crustArea" class="flex-row box-area">
-            <div class="inner-box">Crust:</div>
-            <div class="inner-box">Placeholder</div>
-        </div>  
-        <div id="sizeArea" class="flex-row box-area">
-            <div class="inner-box">Size:</div>
-            <div class="inner-box">Placeholder</div>
-        </div>
-        <div id="cheeseArea" class="flex-row box-area">
-            <div class="inner-box">Cheese:</div>
-            <div class="inner-box">Placeholder</div>
-        </div>  
-        <div id="sauceArea" class="flex-row box-area">
-            <div class="inner-box">Sauce:</div>
-            <div class="inner-box">Placeholder</div>
-        </div> 
-        
-        
-        <div id="toppingsArea" class="flex-row box-area">
-            <div class="inner-box">Toppings:</div>
-            <div id="toppingsList" class="inner-box list"></div>
-        </div> 
-        <div id="totalArea" class="flex-row box-area more-space">
-            <div class="inner-box">Total:</div>
-            <div class="inner-box">Placeholder</div>
-        </div>
-         
-      </div>
-    </div> */}
-
 var fieldList = ["Crust", "Size", "Cheese", "Sauce", "Toppings", "Total"];
 var btnList = ["Modify", "Add To Order"];
 
 function createTemplate(fieldItem) {
   var templateContainer = document.createElement("div");
-  templateContainer.setAttribute("id", `${field-item}Area`);
+  templateContainer.setAttribute("id", `${fieldItem}Area`);
   templateContainer.setAttribute("class", "flex-row box-area");
 
   var fieldName = document.createElement("div");
   fieldName.setAttribute("class", "inner-box");
-  fieldName.textContent(fieldItem);
+  fieldName.textContent = fieldItem;
 
   var fieldInfo = document.createElement("div");
   fieldInfo.setAttribute("id", fieldItem);
@@ -62,14 +29,30 @@ function createTemplate(fieldItem) {
 
 function createButtons(btnItem) {
   var button = document.createElement("div");
-  button.setAttribute("class", "");
+  button.setAttribute("class", "bottom-btn");
+  var aTag = document.createElement("a");
+  aTag.setAttribute("class", "btn");
+  aTag.textContent = btnItem;
+  
+  if (btnItem == "Modify") {
+    button.classList.add("right-mar");
+    aTag.setAttribute("href", "customize.html");
+  }
+  else if (btnItem == "Add To Order") {
+    aTag.setAttribute("href", "thanks.html");
+  }
+
+  button.appendChild(aTag);
+
+  return button;
+
 }
 {/* <div id="btnArea" class="flex-row box-area more-space">
-    <div class="bottom-btn right-mar"><a href="customize.html" class="btn">Modify</a></div>
-    <div class="bottom-btn"><a href="thanks.html" class="btn">Add To Order</a></div>
-</div>  */}
+      <div class="bottom-btn right-mar"><a href="customize.html" class="btn">Modify</a></div>
+      <div class="bottom-btn"><a href="thanks.html" class="btn">Add To Order</a></div>
+    </div>  */}
 
-function CreateTotalPage(fields_array) {
+function CreateTotalPage(fields_array, btn_array) {
   var container = document.createElement("div");
   container.setAttribute("class", "flex-row container");
   var canvas = document.createElement("canvas");
@@ -84,4 +67,13 @@ function CreateTotalPage(fields_array) {
   for (var item in fields_array) {
     area.appendChild(createTemplate(fields_array[item]));
   }
+  for (var item in btn_array) {
+    btnContainer.appendChild(createButtons(btn_array[item]));
+  }
+  area.appendChild(btnContainer);
+  container.appendChild(canvas);
+  container.appendChild(area);
+  document.getElementById('main-body').appendChild(container);
 }
+
+CreateTotalPage(fieldList, btnList);
